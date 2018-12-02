@@ -4,10 +4,18 @@ public class GHHW{
 
      public static void main(String[] args){
 		ArrayList<Integer> list = new ArrayList<>();
+		int num = 8950;
      }
 
      public static ArrayList<Integer> convertArrayList(int num){
 		ArrayList<Integer> list = new ArrayList<>();
+		int number = 0;
+
+		while(num > 0){
+			number = num % 10;
+			list.add(number);
+			num = num / 10;
+		}
 
 		return list;
 	}
