@@ -4,7 +4,10 @@ public class GHHW{
 
      public static void main(String[] args){
 		ArrayList<Integer> list = new ArrayList<>();
-		int num = 8950;
+		int num = (int) (Math.random()*9998)+1;
+
+		list = convertArrayList(num);
+		System.out.println(list);
      }
 
      public static ArrayList<Integer> convertArrayList(int num){
