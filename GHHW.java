@@ -13,6 +13,11 @@ public class GHHW{
      public static ArrayList<Integer> convertArrayList(int num){
 		ArrayList<Integer> list = new ArrayList<>();
 		int number = 0;
+		int temp = 0;
+
+		temp = list.get(0);
+		list.set(0, list.get(list.size() - 1));
+		list.set(list.size() - 1, temp);
 
 		while(num > 0){
 			number = num % 10;
